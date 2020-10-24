@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Typing Master</title>
+  <link rel="stylesheet" href="styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="text-center mt-3">
+    <h1 class="logo">Typing Master</h1>
+    <p class="help-text">Enter the word in to restart the game</p>
+  </header>
+  <main class="container">
+    <h1 id="randomText" class="display-1 m-2 text-center">Ready</h1>
+    <div class="form-group">
+      <input id="gameInput" type="text" autofocus class="form-control form-control-md" placeholder="Type Text" />
+    </div>
+  </main>
+  <div class="container mt-4 text-center rounded game">
+    <p id="game" class="py-3 "></p>
+  </div>
+  <section class="row mt-3 p-4 text-center">
+    <div class="col-5 mx-3 text-center bg-dark pt-3 rounded">
+      <h1>Time Left: <br /> <span style="font-size: 2.5rem;" id="timeLeft">05</span></h1>
+    </div>
+    <div class="col-5 mx-2 text-center bg-dark pt-3 rounded">
+      <h1>Score: <br /> <span style="font-size: 2.5rem;" id="score">0</span></h1>
+    </div>
+    <div class="container rounded p-3 bg-dark text-center mt-5">
+      <h5>How to play?</h5>
+      <p>The Game starts when you type the word in screen
+        , if failed to type word in 5s you Loose
+      </p>
+    </div>
+  </section>
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+
+</html>
